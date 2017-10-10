@@ -102,7 +102,8 @@ T stack<T>::pop()
 {	
 	
 	
-		if (count_ == 0) throw 123;
+		if (count_ == 0)
+			throw "Stack is empty";
 		T n = array_[count_ - 1];
 		count_--;
 		return n;
