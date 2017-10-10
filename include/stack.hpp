@@ -61,7 +61,7 @@ stack<T>& stack<T>::operator=(const stack<T>& other)
 template<class T>
 void stack<T>::print()
 {
-	for(int i=0, i<count_ - 1, i++)
+	for(int i=0, i<count_, i++ )
 	std::cout<< array_[i]<<" ";
 }
 
