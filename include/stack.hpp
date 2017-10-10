@@ -100,15 +100,13 @@ void stack<T>::push(T const & value)
 template<class T>
 T stack<T>::pop()
 {	
-	try
-	{
+	
+	
 		if (count_ == 0) throw 123;
 		T n = array_[count_ - 1];
 		count_--;
 		return n;
-	}
-	catch (int i)
-	{
-		std::cout << "Stack is empty" << std::endl;
-	}
+	
+	
+	
 }
